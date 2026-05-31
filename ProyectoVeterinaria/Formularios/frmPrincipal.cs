@@ -21,13 +21,13 @@ namespace ProyectoVeterinaria.Formularios
 
         public void Datos()
         {
-            Dueño d1 = new Dueño()
+            Cliente d1 = new Cliente()
             {
                 Cedula = "0911111111",
                 Nombre = "Juan Perez"
             };
 
-            Dueño d2 = new Dueño()
+            Cliente d2 = new Cliente()
             {
                 Cedula = "0922222222",
                 Nombre = "Maria Lopez"

@@ -11,13 +11,13 @@ namespace ProyectoVeterinaria.Entidades
         private int idCodigo;
         private string nombre;
         private int edad;
-        private Dueño dueño;
+        private Cliente dueño;
 
         public Mascota()
         {
         }
 
-        public Mascota(int idCodigo, string nombre, int edad, Dueño dueño)
+        public Mascota(int idCodigo, string nombre, int edad, Cliente dueño)
         {
             this.idCodigo = idCodigo;
             this.nombre = nombre;
@@ -28,7 +28,7 @@ namespace ProyectoVeterinaria.Entidades
         public int IdCodigo { get; set; }
         public string Nombre { get; set; }
         public int Edad { get; set; }
-        public Dueño Dueño { get; set; }
+        public Cliente Dueño { get; set; }
 
         public abstract double CalcularCostoConsulta();
     }

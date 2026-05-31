@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace ProyectoVeterinaria.Entidades
 {
-    public class Dueño
+    public class Cliente
     {
         private string cedula;
         private string nombre;
 
-        public Dueño()
+        public Cliente()
         {
         }
-        public Dueño(string cedula, string nombre)
+        public Cliente(string cedula, string nombre)
         {
             this.cedula = cedula;
             this.nombre = nombre;

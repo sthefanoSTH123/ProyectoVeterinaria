@@ -47,7 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controladores\TLista.cs" />
-    <Compile Include="Entidades\Dueño.cs" />
+    <Compile Include="Entidades\Cliente.cs" />
     <Compile Include="Entidades\Gato.cs" />
     <Compile Include="Entidades\Mascota.cs" />
     <Compile Include="Entidades\Perro.cs" />
