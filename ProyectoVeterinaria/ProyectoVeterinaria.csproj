@@ -47,10 +47,53 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controladores\TLista.cs" />
-    <Compile Include="Entidades\Cliente.cs" />
-    <Compile Include="Entidades\Gato.cs" />
-    <Compile Include="Entidades\Mascota.cs" />
-    <Compile Include="Entidades\Perro.cs" />
+    <Compile Include="Controladores\TListaClientes.cs" />
+    <Compile Include="Controladores\TListaMascotas.cs" />
+    <Compile Include="Entidades\Clientes.cs" />
+    <Compile Include="Entidades\Consultas.cs" />
+    <Compile Include="Entidades\Mascotas.cs" />
+    <Compile Include="Formularios\frmAdminClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmAdminClientes.Designer.cs">
+      <DependentUpon>frmAdminClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmAdminConsultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmAdminConsultas.Designer.cs">
+      <DependentUpon>frmAdminConsultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmAdminMascotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmAdminMascotas.Designer.cs">
+      <DependentUpon>frmAdminMascotas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmConsultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmConsultas.Designer.cs">
+      <DependentUpon>frmConsultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmEditClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmEditClientes.Designer.cs">
+      <DependentUpon>frmEditClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmEditConsultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmEditConsultas.Designer.cs">
+      <DependentUpon>frmEditConsultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmEditMascotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmEditMascotas.Designer.cs">
+      <DependentUpon>frmEditMascotas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmMascotas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +108,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\frmAdminClientes.resx">
+      <DependentUpon>frmAdminClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmAdminMascotas.resx">
+      <DependentUpon>frmAdminMascotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmConsultas.resx">
+      <DependentUpon>frmConsultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmEditClientes.resx">
+      <DependentUpon>frmEditClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmEditMascotas.resx">
+      <DependentUpon>frmEditMascotas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmMascotas.resx">
       <DependentUpon>frmMascotas.cs</DependentUpon>
     </EmbeddedResource>
