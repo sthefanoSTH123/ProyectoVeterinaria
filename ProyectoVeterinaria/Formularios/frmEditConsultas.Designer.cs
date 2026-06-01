@@ -95,6 +95,7 @@
             this.btnSalir.TabIndex = 65;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnGuardar
             // 
@@ -104,6 +105,7 @@
             this.btnGuardar.TabIndex = 64;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // label6
             // 
@@ -201,6 +203,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmEditConsultas";
             this.Text = "frmEditConsultas";
+            this.Load += new System.EventHandler(this.frmEditConsultas_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
