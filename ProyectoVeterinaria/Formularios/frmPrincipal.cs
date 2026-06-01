@@ -19,9 +19,7 @@ namespace ProyectoVeterinaria.Formularios
             InitializeComponent();
         }
 
-        private void frmPrincipal_Load(object sender, EventArgs e)
-        {
-        }
+        
 
         private void btnClientes_Click(object sender, EventArgs e)
         {
@@ -31,13 +29,13 @@ namespace ProyectoVeterinaria.Formularios
 
         private void btnMascotas_Click(object sender, EventArgs e)
         {
-            frmMascotas frm = new frmMascotas();
+            frmAdminMascotas frm = new frmAdminMascotas();
             frm.ShowDialog();
         }
 
         private void btnConsultas_Click(object sender, EventArgs e)
         {
-            frmConsultas frm = new frmConsultas();
+            frmAdminConsultas frm = new frmAdminConsultas();
             frm.ShowDialog();
         }
     }

@@ -1,4 +1,5 @@
 ﻿using ProyectoVeterinaria.Controladores;
+using ProyectoVeterinaria.Entidades;
 using ProyectoVeterinaria.Entidades.ProyectoVeterinaria.Entidades;
 using System;
 using System.Collections.Generic;
@@ -20,23 +21,6 @@ namespace ProyectoVeterinaria.Formularios
         {
             InitializeComponent();
             editar = false;
-        }
-
-        private void CargarCombos()
-        {
-            cmbEspecie.Items.Add("Perro");
-            cmbEspecie.Items.Add("Gato");
-            cmbEspecie.Items.Add("Ave");
-            cmbEspecie.Items.Add("Conejo");
-            cmbEspecie.Items.Add("Hamster");
-            cmbEspecie.Items.Add("Tortuga");
-
-            cmbSexo.Items.Add("Macho");
-            cmbSexo.Items.Add("Hembra");
-
-            cmbDueño.DataSource = null;
-            cmbDueño.DataSource =
-                TListaMascotas.listaMascotas;
         }
 
         public frmEditMascotas(int pos)
@@ -64,6 +48,87 @@ namespace ProyectoVeterinaria.Formularios
 
             dtpFechaNacimiento.Value =
                 mascota.FechaNacimiento;
+        }
+
+        private void CargarCombos()
+        {
+            cmbEspecie.Items.Add("Perro");
+            cmbEspecie.Items.Add("Gato");
+            cmbEspecie.Items.Add("Ave");
+            cmbEspecie.Items.Add("Conejo");
+            cmbEspecie.Items.Add("Hamster");
+            cmbEspecie.Items.Add("Tortuga");
+
+            cmbSexo.Items.Add("Macho");
+            cmbSexo.Items.Add("Hembra");
+
+            cmbDueño.DataSource = null;
+            cmbDueño.DataSource =
+                TListaClientes.listaClientes;
+        }
+
+ 
+
+        private void frmEditMascotas_Load(object sender, EventArgs e)
+        {
+            CargarCombos();
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            Mascotas mascota = new Mascotas();
+
+            mascota.IdCodigo =
+                Convert.ToInt32(txtCodigo.Text);
+
+            mascota.Nombre =
+                txtNombre.Text;
+
+            mascota.Edad =
+                Convert.ToInt32(txtEdad.Text);
+
+            mascota.Raza =
+                txtRaza.Text;
+
+            mascota.Peso =
+                Convert.ToDouble(txtPeso.Text);
+
+            mascota.Especie =
+                cmbEspecie.Text;
+
+            mascota.Sexo =
+                cmbSexo.Text;
+
+            mascota.FechaNacimiento =
+                dtpFechaNacimiento.Value;
+
+            mascota.Dueño =
+                (Clientes)cmbDueño.SelectedItem;
+
+            if (editar)
+            {
+                TListaMascotas.Modificar(
+                    pos,
+                    mascota);
+
+                MessageBox.Show(
+                    "Mascota modificada correctamente.");
+            }
+            else
+            {
+                TListaMascotas.Agregar(
+                    mascota);
+
+                MessageBox.Show(
+                    "Mascota registrada correctamente.");
+            }
+
+            Close();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

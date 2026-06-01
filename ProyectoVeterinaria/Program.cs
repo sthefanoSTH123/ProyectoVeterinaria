@@ -17,7 +17,7 @@ namespace ProyectoVeterinaria
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmAdminClientes());
+            Application.Run(new frmPrincipal());
         }
     }
 }

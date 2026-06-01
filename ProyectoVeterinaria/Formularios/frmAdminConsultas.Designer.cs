@@ -28,12 +28,72 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnInsertar = new System.Windows.Forms.Button();
+            this.dgvConsultas = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvConsultas)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // btnModificar
+            // 
+            this.btnModificar.Location = new System.Drawing.Point(588, 352);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(106, 35);
+            this.btnModificar.TabIndex = 25;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Location = new System.Drawing.Point(347, 352);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(106, 35);
+            this.btnEliminar.TabIndex = 24;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // btnInsertar
+            // 
+            this.btnInsertar.Location = new System.Drawing.Point(106, 352);
+            this.btnInsertar.Name = "btnInsertar";
+            this.btnInsertar.Size = new System.Drawing.Size(106, 35);
+            this.btnInsertar.TabIndex = 23;
+            this.btnInsertar.Text = "Insertar";
+            this.btnInsertar.UseVisualStyleBackColor = true;
+            this.btnInsertar.Click += new System.EventHandler(this.btnInsertar_Click);
+            // 
+            // dgvConsultas
+            // 
+            this.dgvConsultas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvConsultas.Location = new System.Drawing.Point(106, 64);
+            this.dgvConsultas.Name = "dgvConsultas";
+            this.dgvConsultas.Size = new System.Drawing.Size(588, 232);
+            this.dgvConsultas.TabIndex = 22;
+            // 
+            // frmAdminConsultas
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnModificar);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnInsertar);
+            this.Controls.Add(this.dgvConsultas);
+            this.Name = "frmAdminConsultas";
             this.Text = "frmAdminConsultas";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvConsultas)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnInsertar;
+        private System.Windows.Forms.DataGridView dgvConsultas;
     }
 }

@@ -58,6 +58,7 @@
             this.btnSalir.TabIndex = 27;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnGuardar
             // 
@@ -67,6 +68,7 @@
             this.btnGuardar.TabIndex = 26;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // label6
             // 
@@ -242,6 +244,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmEditMascotas";
             this.Text = "frmEditMascotas";
+            this.Load += new System.EventHandler(this.frmEditMascotas_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

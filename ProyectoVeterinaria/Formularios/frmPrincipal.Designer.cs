@@ -76,7 +76,6 @@
             this.Controls.Add(this.btnClientes);
             this.Name = "frmPrincipal";
             this.Text = "frmPrincipal";
-            this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.ResumeLayout(false);
 
         }

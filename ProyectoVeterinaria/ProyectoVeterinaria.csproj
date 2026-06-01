@@ -46,8 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controladores\TLista.cs" />
     <Compile Include="Controladores\TListaClientes.cs" />
+    <Compile Include="Controladores\TListaConsultas.cs" />
     <Compile Include="Controladores\TListaMascotas.cs" />
     <Compile Include="Entidades\Clientes.cs" />
     <Compile Include="Entidades\Consultas.cs" />
@@ -70,12 +70,6 @@
     <Compile Include="Formularios\frmAdminMascotas.Designer.cs">
       <DependentUpon>frmAdminMascotas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\frmConsultas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\frmConsultas.Designer.cs">
-      <DependentUpon>frmConsultas.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios\frmEditClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,12 +88,6 @@
     <Compile Include="Formularios\frmEditMascotas.Designer.cs">
       <DependentUpon>frmEditMascotas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\frmMascotas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\frmMascotas.Designer.cs">
-      <DependentUpon>frmMascotas.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios\frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,20 +99,20 @@
     <EmbeddedResource Include="Formularios\frmAdminClientes.resx">
       <DependentUpon>frmAdminClientes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmAdminConsultas.resx">
+      <DependentUpon>frmAdminConsultas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmAdminMascotas.resx">
       <DependentUpon>frmAdminMascotas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frmConsultas.resx">
-      <DependentUpon>frmConsultas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmEditClientes.resx">
       <DependentUpon>frmEditClientes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmEditConsultas.resx">
+      <DependentUpon>frmEditConsultas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmEditMascotas.resx">
       <DependentUpon>frmEditMascotas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frmMascotas.resx">
-      <DependentUpon>frmMascotas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>

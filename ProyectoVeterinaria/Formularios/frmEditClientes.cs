@@ -40,22 +40,6 @@ namespace ProyectoVeterinaria.Formularios
             txtDireccion.Text = cliente.Direccion;
         }
 
-
-        
-
-
-        private void CargarDatos()
-        {
-            txtCedula.Text = clienteEditar.Cedula;
-            txtNombre.Text = clienteEditar.Nombre;
-            txtApellido.Text = clienteEditar.Apellido;
-            txtTelefono.Text = clienteEditar.Telefono;
-            txtCorreo.Text = clienteEditar.Correo;
-            txtDireccion.Text = clienteEditar.Direccion;
-
-            txtCedula.Enabled = false;
-        }
-
         private bool ValidarCampos()
         {
             if (txtCedula.Text.Trim() == "")

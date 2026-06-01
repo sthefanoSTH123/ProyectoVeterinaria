@@ -1,5 +1,6 @@
 ﻿using ProyectoVeterinaria.Controladores;
 using ProyectoVeterinaria.Entidades;
+using ProyectoVeterinaria.Entidades.ProyectoVeterinaria.Entidades;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,16 +20,31 @@ namespace ProyectoVeterinaria.Formularios
             InitializeComponent();
         }
 
+        private void OrdenarColumnas()
+        {
+            dgvMascotas.Columns["Nombre"].DisplayIndex = 0;
+            dgvMascotas.Columns["Edad"].DisplayIndex = 1;
+            dgvMascotas.Columns["Especie"].DisplayIndex = 2;
+            dgvMascotas.Columns["Raza"].DisplayIndex = 3;
+            dgvMascotas.Columns["Sexo"].DisplayIndex = 4;
+            dgvMascotas.Columns["Peso"].DisplayIndex = 5;
+            dgvMascotas.Columns["FechaNacimiento"].DisplayIndex = 6;
+            dgvMascotas.Columns["Dueño"].DisplayIndex = 7;
+
+        }
+
         private void CargarMascotas()
         {
             dgvMascotas.DataSource = null;
             dgvMascotas.DataSource = TListaMascotas.listaMascotas;
+            OrdenarColumnas();
         }
 
         private void btnInsertar_Click(object sender, EventArgs e)
         {
             frmEditMascotas frm = new frmEditMascotas();
             frm.ShowDialog();
+            CargarMascotas();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -39,13 +55,13 @@ namespace ProyectoVeterinaria.Formularios
                 return;
             }
 
-            Clientes seleccionado =
-                (Clientes)dgvMascotas.CurrentRow.DataBoundItem;
+            Mascotas seleccionado =
+                (Mascotas)dgvMascotas.CurrentRow.DataBoundItem;
 
-            int pos = TListaClientes.listaClientes.IndexOf(seleccionado);
+            int pos = TListaMascotas.listaMascotas.IndexOf(seleccionado);
 
             DialogResult res = MessageBox.Show(
-                "¿Está seguro de eliminar este cliente?",
+                "¿Está seguro de eliminar esta mascota?",
                 "Confirmación",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question);
@@ -62,6 +78,32 @@ namespace ProyectoVeterinaria.Formularios
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
+        {
+            if (dgvMascotas.CurrentRow == null)
+            {
+                MessageBox.Show(
+                    "Seleccione una fila.");
+                return;
+            }
+
+            Mascotas seleccionado =
+                (Mascotas)dgvMascotas
+                .CurrentRow
+                .DataBoundItem;
+
+            int pos =
+                TListaMascotas.listaMascotas
+                .IndexOf(seleccionado);
+
+            frmEditMascotas frm =
+                new frmEditMascotas(pos);
+
+            frm.ShowDialog();
+
+            CargarMascotas();
+        }
+
+        private void frmAdminMascotas_Load(object sender, EventArgs e)
         {
 
         }

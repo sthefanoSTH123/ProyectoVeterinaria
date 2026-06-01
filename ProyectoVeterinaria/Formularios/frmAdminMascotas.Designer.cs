@@ -84,6 +84,7 @@
             this.Controls.Add(this.dgvMascotas);
             this.Name = "frmAdminMascotas";
             this.Text = "frmAdminMascotas";
+            this.Load += new System.EventHandler(this.frmAdminMascotas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMascotas)).EndInit();
             this.ResumeLayout(false);
 
