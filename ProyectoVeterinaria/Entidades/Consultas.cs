@@ -30,7 +30,6 @@ namespace ProyectoVeterinaria.Entidades
 
         public int IdConsulta { get; set; }
         public DateTime Fecha { get; set; }
-
         public Clientes Cliente { get; set; }
         public Mascotas Mascota { get; set; }
 
