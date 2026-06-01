@@ -9,7 +9,6 @@ namespace ProyectoVeterinaria.Entidades
 {
     public class Consultas
     {
-        
         public Consultas()
         {
         }
@@ -43,6 +42,5 @@ namespace ProyectoVeterinaria.Entidades
         {
             return $"{IdConsulta} - {Mascota.Nombre}";
         }
-        
     }
 }

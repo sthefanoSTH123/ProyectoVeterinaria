@@ -1,6 +1,5 @@
 ﻿using ProyectoVeterinaria.Controladores;
 using ProyectoVeterinaria.Entidades;
-using ProyectoVeterinaria.Entidades.ProyectoVeterinaria.Entidades;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
