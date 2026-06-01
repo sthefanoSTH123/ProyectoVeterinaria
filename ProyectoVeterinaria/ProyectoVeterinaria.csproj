@@ -46,9 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controladores\TListaConsultas.cs" />
     <Compile Include="Controladores\TListaClientes.cs" />
     <Compile Include="Controladores\TListaMascotas.cs" />
     <Compile Include="Entidades\Clientes.cs" />
+    <Compile Include="Entidades\Consultas.cs" />
     <Compile Include="Entidades\Mascotas.cs" />
     <Compile Include="Formularios\frmAdminClientes.cs">
       <SubType>Form</SubType>
