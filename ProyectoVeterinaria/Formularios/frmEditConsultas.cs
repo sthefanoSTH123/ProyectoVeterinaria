@@ -10,7 +10,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static ProyectoVeterinaria.Entidades.Consultas;
 
 namespace ProyectoVeterinaria.Formularios
 {
@@ -89,7 +88,7 @@ namespace ProyectoVeterinaria.Formularios
             consultas.Cliente =
                 (Clientes)cmbCliente.SelectedItem;
 
-            consultas.Mascota = 
+            consultas.Mascota =
                 (Mascotas)cmbMascota.SelectedItem;
 
             consultas.Fecha =

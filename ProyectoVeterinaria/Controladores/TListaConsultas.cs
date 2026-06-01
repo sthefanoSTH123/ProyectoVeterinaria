@@ -1,5 +1,4 @@
 ﻿using ProyectoVeterinaria.Entidades;
-using ProyectoVeterinaria.Entidades.ProyectoVeterinaria.Entidades;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +8,7 @@ using System.Threading.Tasks;
 namespace ProyectoVeterinaria.Controladores
 {
     public class TListaConsultas
-    {
+    {   
         public static List<Consultas> listaConsultas = new List<Consultas>();
 
         public static void Agregar(Consultas consulta)
@@ -31,3 +30,6 @@ namespace ProyectoVeterinaria.Controladores
         }
     }
 }
+
+
+

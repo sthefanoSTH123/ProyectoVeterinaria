@@ -40,7 +40,7 @@
             this.btnModificar.Location = new System.Drawing.Point(588, 352);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(106, 35);
-            this.btnModificar.TabIndex = 25;
+            this.btnModificar.TabIndex = 29;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
             this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
@@ -50,7 +50,7 @@
             this.btnEliminar.Location = new System.Drawing.Point(347, 352);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(106, 35);
-            this.btnEliminar.TabIndex = 24;
+            this.btnEliminar.TabIndex = 28;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
@@ -60,7 +60,7 @@
             this.btnInsertar.Location = new System.Drawing.Point(106, 352);
             this.btnInsertar.Name = "btnInsertar";
             this.btnInsertar.Size = new System.Drawing.Size(106, 35);
-            this.btnInsertar.TabIndex = 23;
+            this.btnInsertar.TabIndex = 27;
             this.btnInsertar.Text = "Insertar";
             this.btnInsertar.UseVisualStyleBackColor = true;
             this.btnInsertar.Click += new System.EventHandler(this.btnInsertar_Click);
@@ -71,7 +71,7 @@
             this.dgvConsultas.Location = new System.Drawing.Point(106, 64);
             this.dgvConsultas.Name = "dgvConsultas";
             this.dgvConsultas.Size = new System.Drawing.Size(588, 232);
-            this.dgvConsultas.TabIndex = 22;
+            this.dgvConsultas.TabIndex = 26;
             // 
             // frmAdminConsultas
             // 
