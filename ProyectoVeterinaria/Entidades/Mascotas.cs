@@ -12,6 +12,16 @@ namespace ProyectoVeterinaria.Entidades
     {
         public class Mascotas
         {
+            private int idCodigo;
+            private string nombre;
+            private int edad;
+            private string especie;
+            private string raza;
+            private string sexo;
+            private double peso;
+            private DateTime fechaNacimiento;
+            private Clientes dueño;
+
             public Mascotas()
             {
             }

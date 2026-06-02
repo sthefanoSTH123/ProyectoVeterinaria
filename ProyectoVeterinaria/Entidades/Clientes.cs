@@ -4,6 +4,13 @@ namespace ProyectoVeterinaria.Entidades
 {
     public class Clientes
     {
+        private int idCliente;
+        private string cedula;
+        private string nombre;
+        private string apellido;
+        private string telefono;
+        private string correo;
+        private string direccion;
         public Clientes()
         {
         }

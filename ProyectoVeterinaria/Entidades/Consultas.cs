@@ -9,6 +9,23 @@ namespace ProyectoVeterinaria.Entidades
 {
     public class Consultas
     {
+        private int idConsulta;
+        private DateTime fecha;
+        private Clientes cliente;
+        private Mascotas mascota;
+        private string motivo;
+        private string diagnostico;
+        private double costo;
+        public Consultas()
+        {
+        }
+
+        public Consultas(int idConsulta, DateTime fecha,
+                        Clientes cliente, Mascotas mascota,
+                        string motivo, string diagnostico,
+                        double costo)
+        {
+            Costo = costo;
         public Consultas()
         {
         }
