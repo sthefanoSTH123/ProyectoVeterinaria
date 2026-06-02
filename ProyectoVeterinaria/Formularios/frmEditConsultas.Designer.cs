@@ -44,6 +44,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtIdConsulta = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // dtpFechaNacimiento
@@ -180,11 +181,22 @@
             this.label1.TabIndex = 55;
             this.label1.Text = "IdConsulta";
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(65, 9);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(165, 25);
+            this.label10.TabIndex = 71;
+            this.label10.Text = "Edit Consultas";
+            // 
             // frmEditConsultas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(286, 391);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.dtpFechaNacimiento);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.cmbCliente);
@@ -227,5 +239,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtIdConsulta;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label10;
     }
 }

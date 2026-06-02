@@ -2,6 +2,7 @@
 using ProyectoVeterinaria.Entidades;
 using ProyectoVeterinaria.Entidades.ProyectoVeterinaria.Entidades;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -83,31 +84,14 @@ namespace ProyectoVeterinaria.Formularios
                 return;
             }
 
-            Clientes seleccionado =
-                (Clientes)dgvClientes
-                .CurrentRow
-                .DataBoundItem;
+            Clientes seleccionado = (Clientes)dgvClientes.CurrentRow.DataBoundItem;
 
-            int pos =
-                TListaClientes.listaClientes
-                .IndexOf(seleccionado);
+            int pos = TListaClientes.listaClientes.IndexOf(seleccionado);
 
-            DialogResult res =
-                MessageBox.Show(
-                "¿Está seguro de eliminar este cliente?",
-                "Confirmación",
-                MessageBoxButtons.YesNo,
-                MessageBoxIcon.Question);
+            frmEditClientes frm = new frmEditClientes(pos);
+            frm.ShowDialog();
 
-            if (res == DialogResult.Yes)
-            {
-                TListaClientes.Eliminar(pos);
-
-                CargarClientes();
-
-                MessageBox.Show(
-                    "Cliente eliminado correctamente.");
-            }
+            CargarClientes();
         }
     }
 }
